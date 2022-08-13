@@ -13,9 +13,6 @@ interface IProps {
 const LeftSideBar = ({ allUsers, followingUsers }: IProps) => {
   const { userProfile }: any = useAuthStore();
 
-  console.log(allUsers);
-  console.log(followingUsers);
-
   return (
     <div className="flex-col">
       <div className="p-4">
