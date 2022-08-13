@@ -78,7 +78,7 @@ const LeftSideBar = ({ allUsers, followingUsers }: IProps) => {
       </div>
       <div className="p-4 flex-col overflow-auto scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100">
         {userProfile
-          ? followingUsers.length > 0
+          ? followingUsers?.length > 0
             ? allUsers?.map((user: IUser, idx: number) => (
                 <div key={idx}>
                   {followingUsers?.map(

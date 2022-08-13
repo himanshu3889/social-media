@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 export default function NotFound() {
@@ -12,12 +13,12 @@ export default function NotFound() {
             Sorry we couldn't find the page you're looking for
           </p>
 
-          <a
+          <Link
             href="/"
             className="px-5 inline py-3 text-sm font-medium leading-5 shadow-2xl text-white transition-all duration-400 border border-transparent rounded-lg focus:outline-none bg-red-600 active:bg-green-600 hover:bg-green-700"
           >
             Back To Homepage
-          </a>
+          </Link>
           
         </div>
         <div className="w-full lg:flex lg:justify-end lg:w-1/2 mx-5 my-12">
